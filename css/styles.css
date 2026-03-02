@@ -10,4 +10,46 @@
     --color-secundario: #FF6347;
     --color-fondo: #F5F5F5;
     --color-texto: #333333;
+    --color-textos-hover: #FF6347;
+    --tamaño--titulo:2.5rem;
+    --tamaño--subtitulo:1.5rem;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    
+}
+
+
+/*estilos header*/
+
+.header{
+    background: url(../img/fondo.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    color: var(--color-texto);
+
+}
+
+
+.contenedor-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.444);
+}
+
+
+/*secciones intermedias*/
+.contenedor{
+    height: 100%;
+    color: var(--color-secundario);
+    margin: 10px;
 }
