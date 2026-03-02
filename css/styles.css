@@ -10,9 +10,11 @@
     --color-secundario: #FF6347;
     --color-fondo: #F5F5F5;
     --color-texto: #333333;
+    --color-tituloPrincipal: #565656;
     --color-textos-hover: #FF6347;
-    --tamaño--titulo:2.5rem;
+    --tamaño--titulo:5rem;
     --tamaño--subtitulo:1.5rem;
+    --tamaño-texto-nav:25px;
 }
 
 body{
@@ -24,13 +26,12 @@ body{
 /*estilos header*/
 
 .header{
-    background: url(../img/fondo.jpg) no-repeat center center/cover;
+    background: url(../img/FONDO.jpg) no-repeat center center/cover;
     background-attachment: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     align-items: center;
     color: var(--color-texto);
 
@@ -43,13 +44,87 @@ body{
     left:0;
     height: 100px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.444);
+    background-color: rgba(0, 0, 0, 0.612);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:50px;
+}
+
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.contenedor-logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.nav-header ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
 }
 
 
-/*secciones intermedias*/
+.nav-header a{
+    text-decoration: none;
+    font-size:var(--tamaño-texto-nav);
+    color: var(--color-texto);
+
+}
+
+.nav-header a:hover{
+    
+    color: var(--color-textos-hover);
+}
+
+.textos-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.textos-header h1{
+    font-size: var(--tamaño--titulo);
+    
+}
+
+.textos-header a{
+    background-color: rgba(255, 255, 255, 0.814);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: var(--tamaño-texto-nav);
+   
+}
+
+.textos-header a:hover{
+    background-color: rgb(150, 222, 246)
+    
+}
+
+
+/*secciones intermedias para organizar*/
 .contenedor{
-    height: 100%;
-    color: var(--color-secundario);
+    height: 100vh;
+    background-color: var(--color-secundario);
     margin: 10px;
+}
+
+
+
+
+/* media queries */
+
+@media(max-width:766px) {
+    /* reglas */
 }
