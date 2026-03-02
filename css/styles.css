@@ -7,11 +7,12 @@
 
 :root{
     --color-primario: #1E90FF;
-    --color-secundario: #FF6347;
-    --color-fondo: #F5F5F5;
-    --color-texto: #333333;
-    --color-tituloPrincipal: #565656;
-    --color-textos-hover: #FF6347;
+    --color-secundario: #a5a5a5bd;
+    --color-fondo: #ffffff;
+    --color-texto: #2b2b2b;
+    --color-tituloPrincipal: #0038a7;
+    --color-textos-hover: #ff7700;
+    --color-subtitulo: #000000;
     --tamaño--titulo:5rem;
     --tamaño--subtitulo:1.5rem;
     --tamaño-texto-nav:25px;
@@ -26,6 +27,7 @@ body{
 /*estilos header*/
 
 .header{
+    /* background: url(../img/PRINCIPAL.mp4); */
     background: url(../img/FONDO.jpg) no-repeat center center/cover;
     background-attachment: fixed;
     height: 100vh;
@@ -94,31 +96,52 @@ body{
 
 .textos-header h1{
     font-size: var(--tamaño--titulo);
+    background-color: rgba(255, 255, 255, 0.625);
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--color-tituloPrincipal);
+    
     
 }
 
 .textos-header a{
-    background-color: rgba(255, 255, 255, 0.814);
-    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
     padding: 10px 20px;
     text-decoration: none;
-    color: var(--color-texto);
+    color: var(white);
     font-size: var(--tamaño-texto-nav);
+    color: var(--color-subtitulo);
    
 }
 
+/* .textos-header h3{
+    font-size: var(--tamaño--subtitulo);
+    color: var(--color-fondo);
+    background-color: rgba(0, 132, 255, 0.625);
+    border-radius: 25px;
+
+} */
+
+/* toma las mejores deciciones con seguridad */
+
+
+
+
 .textos-header a:hover{
-    background-color: rgb(150, 222, 246)
+    background-color: rgb(25, 55, 65)
     
 }
 
 
 /*secciones intermedias para organizar*/
 .contenedor{
-    height: 100vh;
+    height: auto;
     background-color: var(--color-secundario);
     margin: 30px 0;
     text-align: center;
+    padding: 30px;
 }
 
 .contenedor-productos{
@@ -146,6 +169,71 @@ body{
     object-fit: cover;
     border-radius: 5px;
 }
+
+
+
+/*Diseño Sobre nosotros*/
+
+     .sobre-nosotros{
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+.sobre-nosotros h2{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.contenedor-sobre-nosotros{
+    padding: 60px 0;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+}
+
+.imagen-sobre-nosotros{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+.contenido-textos{
+    width: 100%;   
+}
+.contenido-textos h3 {
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    display: inline-block;
+    background-color: aqua;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.5);
+}
+.contenido-textos p{
+    padding:10px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
