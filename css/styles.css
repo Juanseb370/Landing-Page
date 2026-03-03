@@ -234,15 +234,16 @@ body{
 /* seccion video */
 
 
-.contenido-video {
+ .contenido-video {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
    
 }
-.Cali{
+.contenedor-video{
     background-color: rgb(255, 255, 255);
     text-align:center;
     padding: 50px;
@@ -253,17 +254,21 @@ body{
 
 
 
+
+
+
+
 /* SECCION INFORMACION 2 */
 
-.contenedor-soporte{
-    padding: 60px 0;
-    width: 80%;
+ .contenedor-soporte{
+    padding: 20px 0;
+    width: 70%;
     margin: auto;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 30px;
+    gap: 10px;
 }
 
 .soporte{
@@ -273,12 +278,12 @@ body{
 }
 .soporte h2{
     font-size: 2.5rem;
-    margin: 5px 0;
-    padding: 20px;
+    margin: 0px 0;
+    padding: 40px;
 }
 
 .imagen-soporte{
-    width: 80%;
+    width: 90%;
     object-fit: cover;
     
 }
@@ -286,8 +291,8 @@ body{
 
 
 .contenido-textos h3 {
-    margin-bottom: 15px;
-    color: white;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
 }
 
 .contenido-textos p{
