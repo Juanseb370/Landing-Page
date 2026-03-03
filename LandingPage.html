@@ -11,7 +11,11 @@
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- animaciones -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 
@@ -50,6 +54,7 @@
 
     <section class="contenedor">
         <h2>SERVICIOS</h2>
+
 
     <div class="contenedor-productos">
     <article class="tarjeta">
@@ -114,10 +119,11 @@
 
      <!-- SECCION DONDE ESTA EL VIDEO -->
 
-    <section class="contenedor Video">
-        <h2>VEN A CONOCER CALI</h2>
+    <section class="contenido-video">
+        <h2 class="Cali">VEN A CONOCER CALI</h2>
         <div class="contenedor-video">
-            <iframe width="700" height="450" src="../Landing Page/img/PRINCIPAL.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kpj5vGM1BAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
         </div>
     </section>
 
@@ -125,14 +131,14 @@
 
 
     <section class="contenedor soporte">
-        <h2>SOPORTE</h2>
+        <h2 class="soporte">Soporte</h2>
         <div class="contenedor-soporte">
             <img class="imagen-soporte" src="img/SOBRE NOSOTROS 2.jpg" alt="soporte">
-            <div class="contenido-textos">
-                <h3> <span>1</span> CONSTANTE COMUNICACION</h3>
+            <div class="contenido-textos-soporte">
+                <h3 class="titulo-soporte">CONSTANTE COMUNICACION</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis possimus perferendis nostrum mollitia odio voluptatum cum beatae autem quod cumque, voluptate natus, ipsam eius earum tenetur. Voluptates, veniam tempora?</p>
     
-                <h3><span>2</span> INFORMACION VERIFICADA</h3>
+                <h3 class="titulo-soporte2">INFORMACION VERIFICADA</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, autem quibusdam a perferendis suscipit veritatis delectus, adipisci harum ratione nobis, quisquam nostrum officiis maiores ab cum quos sequi dolore doloremque?</p>
 
             </div>         
@@ -140,6 +146,8 @@
         </div>
      </section>
 
+     <script src="scripts.js"></script>
+
 
 
 
@@ -149,7 +157,16 @@
 
 
 
-    <footer class="footer"></footer>
-    
-</body>
+    <!-- footer -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </div>
+        </footer>
+        </body>
 </html>
